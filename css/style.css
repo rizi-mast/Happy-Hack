@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    font-family: "Futura";
+    color: #ffffff;
+}
+
+.bg-slider{
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+}
+
+.logo{
+    text-align: center;
+    padding-top: 160px;
+}
+
+.logo p{
+    font-size: 50px;
+    padding: 40px 0 250px;
+    font-style: italic;
+}
+
+nav{
+    font-size: 28px;
+    padding: 30px;
+}
+
+nav li{
+    list-style: none;
+    float: right;
+}
+
+nav a{
+    color: #ffffff;
+    text-decoration: none;
+    margin: 15px;
+    
+}
+
+nav a:hover{
+    color: #5555ff;
+    transition: 0.5s;
+}
+
+body{
+    width: 100%;
+    background: #ffffff;
+}
+
+.visible {
+  opacity: 0;
+  transition: transform 0.5s linear;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+/*　brightness　*/
+.effect {
+  animation-name: imgbrightness;
+  opacity: 1;
+  transition: 1s;
+}
+@keyframes imgbrightness {
+  0% {
+    opacity: 0;
+    filter: brightness(300%);
+	/*　明度300%　*/
+  }
+  100% {
+    opacity: 1;
+    filter: brightness(100%);
+	/*　100%が基準値　*/
+  }
+}
+
+.main h2{
+    font-family: "Futura";
+    font-size: 54px;
+    color: #5555ff;
+    padding: 50px;
+    text-align: center;
+}
+
+/*Introduction*/
+.register{
+    width: 400px;
+    padding: 0 50px;
+}
+
+.register p{
+    line-height: 32px;
+}
+
+.button1{
+    text-align: center;
+    margin-top: 25px;
+}
+.button2{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.button1 a{
+    font-size: 20px;
+    border: #5555ff solid 1px;
+    border-radius: 10px;
+    background-color: #5555ff;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 40px;
+}
+.button2 a{
+    font-size: 20px;
+    border: #ffbb00 solid 1px;
+    border-radius: 10px;
+    background-color: #ffbb00;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 40px;
+}
+
+.button1 a:hover{
+    box-shadow: 0 0 8px gray;
+}
+.button2 a:hover{
+    box-shadow: 0 0 8px gray;
+}
+
+.intro1{
+    padding: 0 200px;
+}
+
+.intro1 .register{
+    float: right;
+    padding-top: 10px;
+}
+
+.intro2{
+    margin: 84px 30px 100px;
+    padding: 0 170px;
+}
+
+.intro2 img{
+    float: right;
+}
+
+/*Courses*/
+#Courses{
+    background-color: #c6e3ff;
+    overflow: hidden;
+    height: auto;
+    position: relative;
+    z-index: 0;
+}
+
+#particle{
+    background-color: #c6e3ff;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.contents{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+
+.boxes{
+    display: inline-block;
+    text-align: center;
+    margin: 0px 150px 50px;
+}
+
+.box{
+    border: #ffffff solid 1px;
+    width: 180px;
+    height: 260px;
+    padding: 30px 30px 50px;
+    margin: 10px 10px 20px;
+    display: inline-block;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.box img{
+    height: 120px;
+}
+
+.box p{
+    font-size: 15px;
+    font-weight: bold;
+    color: #333366;
+    padding: 40px 0px;
+}
+
+.box a{
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    border: #333333 solid 1px;
+    border-radius: 10px;
+    background-color: #333333;
+    padding: 12px 24px;
+}
+
+.box a:hover{
+    box-shadow: 0 0 8px gray;
+}
+
+.html a{
+    border-color: #ff7044;
+    background-color: #ff7044;
+}
+.css a{
+    border-color: #3eb9e9;
+    background-color: #3eb9e9;
+}
+.unity a{
+    border-color: #333333;
+    background-color: #333333;
+}
+.ruby a{
+    border-color: #ff5555;
+    background-color: #ff5555;
+}
+.js a{
+    border-color: #f0d800;
+    background-color: #f0d800;
+}
+.swift a{
+    border-color: #ff693b;
+    background-color: #ff693b;
+}
+.go a{
+    border-color: #73cbee;
+    background-color: #73cbee;
+}
+
+.slider{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.slider img{
+    width: 100%;
+    height: auto;
+}
+
+.slider .slick-slide{
+    margin: 0 0;
+}
+
+.slick-prev,
+.slick-next{
+    position: absolute;
+    top: 42%;
+    cursor: pointer;
+    outline: none;
+    border-top: 2px solid #666666;
+    border-right: 2px solid #666666;
+    height: 15px;
+    width: 15px;
+}
+
+.slick-prev{
+    left: -1.5%;
+    transform: rotate(-135deg);
+}
+
+.slick-next{
+    right: -1.5%;
+    transform: rotate(45deg);
+}
+
+.slick-dots{
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+.slick-dots li{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.slick-dots button{
+    color: transparent;
+    outline: none;
+    width: 2px;
+    height: 2px;
+    display: block;
+    border-radius: 50%;
+    background: #999999;
+}
+.slick-dots .slick-active button{
+    background: #333333;
+}
+
+#Access{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+footer{
+    color: #5555ff;
+    font-family: "Futura";
+    text-align: center;
+    margin: 20px;
+}

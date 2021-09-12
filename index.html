@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/particles.min.js"></script>
+    <script type="text/javascript" src="js/jquery.bgswitcher.js"></script>
+    <script type="text/javascript" src="js/jquery.inview.min.js"></script>
+    <title>Happy Hack</title>
+</head>
+
+<header>
+    <div class="bg-slider">
+    <nav>
+        <ul>
+            <li><a href="#Access">Access</a></li>
+            <li><a href="#Images">Images</a></li>
+            <li><a href="#Courses">Courses</a></li>
+            <li><a href="#Intro">Introduction</a></li>
+        </ul>
+    </nav>
+    <div class="logo">
+        <img src="images/logo.png" alt="" width="63%">
+        <p>We are Web Designers.</p>
+    </div>
+    </div>
+</header>
+
+<body>
+<div class="main">
+    <div id="Intro" class="visible">
+        <h2>Introduction</h2>
+
+        <div class="intro1">
+            <img src="images/introduction_001.jpg" alt="" width="500px">
+            <div class="register">
+                <p>Happy Hackはいまをときめく若者がITを活用したものづくりに取り組める環境を提供しています。
+                <br>特に、Webデザイン領域のプログラミングを学習している生徒が一番積極的に活動しています。
+                <br>誰でも最初は初心者。それを一番知っている我々がプログラミングへの第一歩を踏み出すお手伝いをさせていただきます。
+                </p>
+                <div class="button1"><a href="#Intro">会員登録</a></div>
+            </div>
+        </div>
+
+        <div class="intro2">
+            <img src="images/introduction_002.jpg" alt="" width="500px">
+            <div class="register">
+                <p>Happy Hackでは「楽しさ」と「真剣さ」をモットーにプログラミングを学びます。コースは全部で7つ準備をしています。
+                <br>WebデザインからWebサービス、3DゲームやiPhoneアプリまで幅広くお楽しみいただけます。
+                <br>自分の想いをカタチにして発信することをぜひこの場で体験してみてください。世界が変わって見えるかもしれません。
+                </p>
+                <div class="button2"><a href="#Intro">会員登録</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Courses" class="visible">
+        <div id="particle"></div>
+        <div class="contents">
+        <h2>Courses</h2>
+
+        <div class="boxes">
+            <div class="box">
+                <img src="images/html.png" alt="">
+                <p>HTMLコース</p>
+                <div class="html"><a href="#Courses">このコースを受ける</a></div>
+            </div>
+            <div class="box">
+                <img src="images/css.png" alt="">
+                <p>CSSコース</p>
+                <div class="css"><a href="#Courses">このコースを受ける</a></div>
+            </div>
+            <div class="box">
+                <img src="images/unity.png" alt="">
+                <p>Unityコース</p>
+                <div class="unity"><a href="#Courses">このコースを受ける</a></div>
+            </div>
+            <div class="box">
+                <img src="images/ruby.png" alt="">
+                <p>Rubyコース</p>
+                <div class="ruby"><a href="#Courses">このコースを受ける</a></div>
+            </div>
+            <div class="box">
+                <img src="images/js.png" alt="">
+                <p>JavaScriptコース</p>
+                <div class="js"><a href="#Courses">このコースを受ける</a></div>
+            </div>
+            <div class="box">
+                <img src="images/swift.png" alt="">
+                <p>Swiftコース</p>
+                <div class="swift"><a href="#Courses">このコースを受ける</a></div>
+            </div>
+            <div class="box">
+                <img src="images/go.png" alt="">
+                <p>Goコース</p>
+                <div class="go"><a href="#Courses">このコースを受ける</a></div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div id="Images" class="visible">
+        <h2>Images</h2>
+        <ul class="slider">
+            <li><img src="images/background1.jpg" alt=""></li>
+            <li><img src="images/background2.jpg" alt=""></li>
+            <li><img src="images/background3.jpg" alt=""></li>
+            <li><img src="images/background4.jpg" alt=""></li>
+            <li><img src="images/background5.jpg" alt=""></li>
+        </ul>
+    </div>
+
+    <div id="Access" class="visible">
+        <h2>Access</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13121.25251200182!2d135.4924486!3d34.6972813!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9fec1659611f776f!2zTGlmZSBpcyBUZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sja!2sjp!4v1631368244315!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</div>
+<script>
+    jQuery(function($){
+        $(".bg-slider").bgSwitcher({
+            images:["images/background1.jpg","images/background2.jpg","images/background3.jpg","images/background4.jpg","images/background5.jpg"]
+        });
+    });
+
+    $(function() {
+        $('.visible').one('inview', function(event, isInView) {
+        //一度のみのinviewの際は　.oneにする
+            if (isInView) {
+                // .visibleがビューポートに入った場合
+                $(this).addClass('effect');
+            } else {
+                // .visibleがビューポートにから抜けた場合
+                $(this).removeClass('effect');
+            }
+            //$('#footer').off('inview');
+        });
+    });
+
+    $(".slider").slick({
+        autoplay: true,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: '<div class="slick-prev"></div>',
+        nextArrow: '<div class="slick-next"></div>',
+        dots: true,
+        responsive: [
+            {
+            breakpoint: 769,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+            }
+            },
+            {
+            breakpoint: 426,
+            settings:{
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            }
+            }
+        ]
+    });
+
+    particlesJS("particle", {
+        "particles":{
+            "number":{
+                "value":80,
+                "density":{
+                    "enable":true,
+                    "value_area":800
+                }
+            },
+            "color":{
+                "value":"#ffffff"
+            },
+            "shape":{
+                "type":"circle",
+                "stroke":{
+                    "width":0,
+                    "color":"#000000"
+                },
+                "polygon":{
+                    "nb_sides":5
+                },
+                "image":{
+                    "src":"img/github.svg",
+                    "width":100,"height":100
+                }
+            },
+            "opacity":{
+                "value":0.5,
+                "random":false,
+                "anim":{
+                    "enable":false,
+                    "speed":1,
+                    "opacity_min":0.1,
+                    "sync":false
+                }
+            },
+            "size":{
+                "value":3,
+                "random":true,
+                "anim":{
+                    "enable":false,
+                    "speed":40,
+                    "size_min":0.1,
+                    "sync":false
+                }
+            },
+            "line_linked":{
+                "enable":true,
+                "distance":150,
+                "color":"#ffffff",
+                "opacity":0.4,
+                "width":1
+            },
+            "move":{
+                "enable":true,
+                "speed":6,
+                "direction":"none",
+                "random":false,
+                "straight":false,
+                "out_mode":"out",
+                "bounce":false,
+                "attract":{
+                    "enable":false,
+                    "rotateX":600,
+                    "rotateY":1200
+                }
+            }
+        },
+        "interactivity":{
+            "detect_on":"canvas",
+            "events":{
+                "onhover":{
+                    "enable":true,
+                    "mode":"repulse"
+                },
+                "onclick":{
+                    "enable":true,
+                    "mode":"push"
+                },
+                "resize":true
+            },
+            "modes":{
+                "grab":{
+                    "distance":400,
+                    "line_linked":{
+                        "opacity":1
+                    }
+                },
+                "bubble":{
+                    "distance":400,
+                    "size":40,
+                    "duration":2,
+                    "opacity":8,
+                    "speed":3
+                },
+                "repulse":{
+                    "distance":200,
+                    "duration":0.4
+                },
+                "push":{
+                    "particles_nb":4
+                },
+                "remove":{
+                    "particles_nb":2
+                }
+            }
+        },
+        "retina_detect":true
+    });
+    var count_particles, stats, update;
+    stats = new Stats; stats.setMode(0);
+    stats.domElement.style.position = 'absolute';
+    stats.domElement.style.left = '0px';
+    stats.domElement.style.top = '0px';
+    document.body.appendChild(stats.domElement);
+    count_particles = document.querySelector('.js-count-particles');
+    update = function() { 
+        stats.begin(); stats.end();
+        if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { 
+            count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+        }
+        requestAnimationFrame(update);
+    };
+    requestAnimationFrame(update);;
+</script>
+</body>
+
+<footer>
+    <p>&copy; 2019 Happy Hack Inc.</p>
+</footer>
+</html>
