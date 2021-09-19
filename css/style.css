@@ -6,6 +6,7 @@
 header{
     font-family: "Futura";
     color: #ffffff;
+    position: relative;
 }
 
 .bg-slider{
@@ -16,14 +17,23 @@ header{
 }
 
 .logo{
-    text-align: center;
-    padding-top: 160px;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-25%) translateX(-50%);
+}
+
+.logo img{
+    width: 900px;
+    margin: 0;
 }
 
 .logo p{
     font-size: 50px;
     padding: 40px 0 250px;
     font-style: italic;
+    text-align: center;
 }
 
 nav{
@@ -151,6 +161,7 @@ body{
 
 /*Courses*/
 #Courses{
+    width: 100%;
     background-color: #c6e3ff;
     overflow: hidden;
     height: auto;
@@ -174,32 +185,33 @@ body{
 }
 
 .boxes{
-    display: inline-block;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     margin: 0px 150px 50px;
 }
 
 .box{
     border: #ffffff solid 1px;
-    width: 180px;
-    height: 260px;
-    padding: 30px 30px 50px;
+    padding: 50px 30px 50px;
     margin: 10px 10px 20px;
-    display: inline-block;
     text-align: center;
     background-color: #ffffff;
     border-radius: 10px;
 }
 
-.box img{
-    height: 120px;
+.boximg{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
 }
 
 .box p{
     font-size: 15px;
     font-weight: bold;
     color: #333366;
-    padding: 40px 0px;
+    padding: 20px 0px;
 }
 
 .box a{
@@ -296,8 +308,8 @@ body{
 .slick-dots button{
     color: transparent;
     outline: none;
-    width: 2px;
-    height: 2px;
+    width: 4px;
+    height: 4px;
     display: block;
     border-radius: 50%;
     background: #999999;
@@ -316,4 +328,118 @@ footer{
     font-family: "Futura";
     text-align: center;
     margin: 20px;
+}
+
+@media screen and (max-width:479px){
+    .logo{
+        transform: translateY(-16%) translateX(-50%);
+    }
+    .logo img{
+        width: 275px;
+        margin: 0;
+    }
+    .logo p{
+        font-size: 16px;
+        padding: 30px 0 250px;
+        font-style: italic;
+        text-align: center;
+    }
+    nav{
+        font-size: 0px
+    }
+
+    .main h2{
+        font-size: 30px;
+        padding: 50px;
+        text-align: center;
+    }
+
+    /*Introduction*/
+    #Intro img{
+        width: 360px;
+    }
+    .register{
+        width: 360px;
+        padding: 30px 40px;
+        margin: 30px auto 50px;
+    }
+
+    .register p{
+        font-size: 13px;
+        line-height: 28px;
+    }
+
+    .button1{
+        text-align: center;
+        margin-top: 25px;
+    }
+    .button2{
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .button1 a{
+        font-size: 15px;
+        padding: 10px 50px;
+    }
+    .button2 a{
+        font-size: 15px;
+        padding: 10px 50px;
+    }
+    .intro1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 0 0 30px;
+    }
+    .intro2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .intro1 .register{
+        float: none;
+    }
+    .intro2 img{
+        float: none;
+    }
+
+    /*Courses*/
+    .boxes{
+        margin: 0px 10px 0px;
+    }
+    .box{
+        padding: 10px 10px 20px;
+        margin: 10px 10px 20px;
+    }
+    .boximg{
+        width: 90px;
+        height: 90px;
+        padding: 10px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box img{
+        width: 70%;
+    }
+    .box p{
+        font-size: 14px;
+        padding: 5px 0px;
+        margin: 10px auto 20px;
+    }
+    .box a{
+        padding: 12px 12px;
+        margin-bottom: 10px;
+    }
+
+    iframe{
+        width: 100%;
+    }
 }
